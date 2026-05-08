@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0f6e7b" />
+    <title>MedClear | Hospital Cost Transparency</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="login-screen" class="login-shell">
+      <div class="login-visual" aria-hidden="true"></div>
+      <main class="login-card">
+        <div class="brand-row">
+          <span class="brand-mark" data-icon="pulse"></span>
+          <span class="brand-name">MedClear</span>
+        </div>
+        <p class="eyebrow">Healthcare cost transparency</p>
+        <h1>Know the cost before you walk in.</h1>
+        <p class="login-copy">
+          Compare treatment costs, emergency access, real reviews, and hospital clarity scores from one responsive workspace.
+        </p>
+        <form id="login-form" class="login-form">
+          <label>
+            <span>User ID</span>
+            <input name="username" autocomplete="username" value="medclear" required />
+          </label>
+          <label>
+            <span>Password</span>
+            <input name="password" autocomplete="current-password" type="password" value="care2026" required />
+          </label>
+          <button class="primary-button" type="submit">
+            <span data-icon="lock"></span>
+            Sign in
+          </button>
+          <p id="login-error" class="form-error" role="alert"></p>
+        </form>
+      </main>
+    </div>
+
+    <div id="app" class="app-shell" hidden>
+      <header class="topbar">
+        <a class="brand-row nav-brand" href="#home" data-route="home" aria-label="MedClear home">
+          <span class="brand-mark" data-icon="pulse"></span>
+          <span class="brand-name">MedClear</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <button data-route="home" class="nav-link active">Home</button>
+          <button data-route="compare" class="nav-link">Compare</button>
+          <button data-route="emergency" class="nav-link">Emergency</button>
+        </nav>
+        <div class="top-actions">
+          <button class="icon-button" id="logout-button" type="button" title="Sign out" aria-label="Sign out">
+            <span data-icon="logout"></span>
+          </button>
+          <button class="danger-button" data-route="emergency" type="button">
+            <span data-icon="phone"></span>
+            Emergency
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section id="home-page" class="page active">
+          <section class="hero-section">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="hero-content reveal">
+              <p class="eyebrow"><span data-icon="shield"></span> Healthcare cost clarity</p>
+              <h1>Find the right hospital before the bill finds you.</h1>
+              <p>
+                Search by treatment, PIN code, city, ER access, and clarity score. For treatment-only searches, MedClear starts near Dehradun.
+              </p>
+              <form id="hero-search" class="hero-search">
+                <label>
+                  <span data-icon="search"></span>
+                  <input name="treatment" placeholder="Search treatment or procedure..." />
+                </label>
+                <label>
+                  <span data-icon="map-pin"></span>
+                  <input name="location" placeholder="City or PIN code..." />
+                </label>
+                <button class="primary-button" type="submit">
+                  <span data-icon="arrow-right"></span>
+                  Search
+                </button>
+              </form>
+              <div class="popular-row" aria-label="Popular searches">
+                <button data-treatment="MRI Scan">MRI Scan</button>
+                <button data-treatment="Angioplasty">Angioplasty</button>
+                <button data-treatment="C-Section Delivery">C-Section</button>
+                <button data-treatment="Liver Transplant">Liver Transplant</button>
+                <button data-treatment="Knee Replacement">Knee Replacement</button>
+              </div>
+            </div>
+          </section>
+
+          <section class="stats-band reveal">
+            <article>
+              <span data-icon="building"></span>
+              <strong id="stat-hospitals">12+</strong>
+              <span>Hospitals listed</span>
+            </article>
+            <article>
+              <span data-icon="users"></span>
+              <strong>27K+</strong>
+              <span>Patient reviews</span>
+            </article>
+            <article>
+              <span data-icon="wallet"></span>
+              <strong>4.5Cr+</strong>
+              <span>Estimated savings</span>
+            </article>
+            <article>
+              <span data-icon="shield"></span>
+              <strong>98%</strong>
+              <span>Cost accuracy goal</span>
+            </article>
+          </section>
+
+          <section class="content-section reveal">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Verified facilities</p>
+                <h2>Top-rated hospitals</h2>
+              </div>
+              <button class="text-button" data-route="compare" type="button">
+                View all hospitals
+                <span data-icon="arrow-right"></span>
+              </button>
+            </div>
+            <div id="top-hospitals" class="hospital-grid"></div>
+          </section>
+
+          <section class="process-band reveal">
+            <div class="section-heading center">
+              <div>
+                <p class="eyebrow">How it works</p>
+                <h2>Four steps to a clearer decision</h2>
+              </div>
+            </div>
+            <div class="process-grid">
+              <article>
+                <span data-icon="search"></span>
+                <h3>Search</h3>
+                <p>Enter a procedure, city, or PIN code.</p>
+              </article>
+              <article>
+                <span data-icon="sliders"></span>
+                <h3>Filter</h3>
+                <p>Sort by distance, rating, ER access, or clarity.</p>
+              </article>
+              <article>
+                <span data-icon="wallet"></span>
+                <h3>Compare</h3>
+                <p>See estimated line-item costs and insurance rates.</p>
+              </article>
+              <article>
+                <span data-icon="video"></span>
+                <h3>Book</h3>
+                <p>Request a virtual consultation from the hospital page.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="emergency-band reveal">
+            <div>
+              <p class="eyebrow danger"><span data-icon="phone"></span> Emergency access</p>
+              <h2>In a medical emergency?</h2>
+              <p>Find nearby ER hospitals, estimated wait times, and national emergency contacts in one place.</p>
+            </div>
+            <button class="danger-button large" data-route="emergency" type="button">
+              <span data-icon="siren"></span>
+              Open emergency finder
+            </button>
+          </section>
+        </section>
+
+        <section id="compare-page" class="page">
+          <section class="page-intro reveal">
+            <p class="eyebrow">Compare hospitals</p>
+            <h1>Find care by treatment, PIN code, and transparency.</h1>
+            <p>Try "MRI Scan" with PIN code "248001", or search only "MRI" to default near Dehradun.</p>
+          </section>
+
+          <form id="compare-form" class="filter-panel reveal">
+            <label>
+              <span data-icon="search"></span>
+              <input name="treatment" placeholder="Treatment, e.g. MRI Scan" />
+            </label>
+            <label>
+              <span data-icon="map-pin"></span>
+              <input name="location" placeholder="City or location" />
+            </label>
+            <label>
+              <span data-icon="pin"></span>
+              <input name="pincode" inputmode="numeric" maxlength="6" placeholder="PIN code" />
+            </label>
+            <label>
+              <span data-icon="building"></span>
+              <select name="type">
+                <option value="all">All types</option>
+                <option value="Specialty">Specialty</option>
+                <option value="Teaching">Teaching</option>
+                <option value="General">General</option>
+              </select>
+            </label>
+            <label>
+              <span data-icon="sliders"></span>
+              <select name="sort">
+                <option value="recommended">Recommended</option>
+                <option value="distance">Nearest</option>
+                <option value="clarity">Clarity score</option>
+                <option value="rating">Rating</option>
+                <option value="cost">Lowest cost</option>
+              </select>
+            </label>
+            <button class="primary-button" type="submit">
+              <span data-icon="arrow-right"></span>
+              Search
+            </button>
+          </form>
+
+          <div id="location-status" class="api-status reveal"></div>
+          <section id="compare-results" class="results-list reveal" aria-live="polite"></section>
+        </section>
+
+        <section id="detail-page" class="page">
+          <div id="hospital-detail" class="detail-layout"></div>
+        </section>
+
+        <section id="emergency-page" class="page">
+          <section class="page-intro reveal">
+            <p class="eyebrow danger">Emergency contacts</p>
+            <h1>Nearest ER options and urgent numbers.</h1>
+            <p>Location search defaults to Dehradun, with 108 and 112 available prominently for Indian emergency support.</p>
+          </section>
+          <form id="emergency-form" class="filter-panel compact reveal">
+            <label>
+              <span data-icon="map-pin"></span>
+              <input name="location" placeholder="City or location" value="Dehradun" />
+            </label>
+            <label>
+              <span data-icon="pin"></span>
+              <input name="pincode" inputmode="numeric" maxlength="6" placeholder="PIN code" />
+            </label>
+            <button class="danger-button" type="submit">
+              <span data-icon="siren"></span>
+              Find ER
+            </button>
+          </form>
+          <div id="emergency-content" class="emergency-content reveal"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div>
+          <div class="brand-row">
+            <span class="brand-mark" data-icon="pulse"></span>
+            <span class="brand-name">MedClear</span>
+          </div>
+          <p>Bringing transparency to healthcare costs. Know before you go.</p>
+        </div>
+        <div>
+          <h3>Platform</h3>
+          <button data-route="compare" type="button">Compare hospitals</button>
+          <button data-route="emergency" type="button">Emergency contacts</button>
+        </div>
+        <div>
+          <h3>Resources</h3>
+          <a href="/api/sources" target="_blank" rel="noreferrer">Data sources</a>
+          <a href="https://www.postalpincode.in/Api-Details" target="_blank" rel="noreferrer">PIN code API</a>
+          <a href="https://nominatim.org/release-docs/latest/api/Search/" target="_blank" rel="noreferrer">Nominatim</a>
+        </div>
+        <div>
+          <h3>Project</h3>
+          <span>Design thinking demo</span>
+          <span>Responsive web app</span>
+          <span>Node backend</span>
+        </div>
+      </footer>
+    </div>
+
+    <div id="consult-modal" class="modal-shell" hidden>
+      <div class="modal-backdrop" data-close-modal></div>
+      <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="icon-button modal-close" type="button" data-close-modal aria-label="Close consultation form">
+          <span data-icon="close"></span>
+        </button>
+        <p class="eyebrow"><span data-icon="video"></span> Virtual consultation</p>
+        <h2 id="modal-title">Book virtual consultation</h2>
+        <p id="modal-subtitle"></p>
+        <form id="consult-form" class="consult-form">
+          <input type="hidden" name="hospital_id" />
+          <label>
+            <span>Full name *</span>
+            <input name="name" placeholder="e.g. Priya Sharma" required />
+          </label>
+          <label>
+            <span>Email address *</span>
+            <input name="email" type="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            <span>Phone number *</span>
+            <input name="phone" placeholder="+91 98765 43210" required />
+          </label>
+          <label>
+            <span>Procedure to discuss *</span>
+            <input
+              name="procedure"
+              placeholder="e.g. MRI, Spinal surgery, Knee replacement, Chemotherapy"
+              required
+            />
+            <div class="procedure-presets" aria-label="Suggested procedures">
+              <button type="button" class="chip-button" data-procedure="MRI">MRI</button>
+              <button type="button" class="chip-button" data-procedure="Spinal surgery">Spinal surgery</button>
+              <button type="button" class="chip-button" data-procedure="Knee replacement">Knee replacement</button>
+              <button type="button" class="chip-button" data-procedure="Chemotherapy">Chemotherapy</button>
+            </div>
+          </label>
+          <label>
+            <span>Preferred time</span>
+            <input name="preferred_time" placeholder="Tomorrow morning, after 10 AM" />
+          </label>
+          <label>
+            <span>Notes</span>
+            <textarea name="notes" rows="3" placeholder="Symptoms, reports, or insurance questions"></textarea>
+          </label>
+          <button class="primary-button" type="submit">
+            <span data-icon="calendar"></span>
+            Request consultation
+          </button>
+          <p id="consult-message" class="form-message" role="status"></p>
+        </form>
+      </section>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

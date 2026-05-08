@@ -1,0 +1,898 @@
+[
+  {
+    "id": "medanta-gurugram",
+    "name": "Medanta - The Medicity, Gurugram",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "address": "Sector 38, Gurugram, Haryana",
+    "pincode": "122001",
+    "lat": 28.4397,
+    "lon": 77.0416,
+    "phone": "+91-124-4141414",
+    "emergency_phone": "1800-11-0101",
+    "website": "https://www.medanta.org/",
+    "type": "Specialty Center",
+    "clarity": 97,
+    "rating": 4.9,
+    "reviews_count": 6340,
+    "er_available": true,
+    "er_wait_min": 12,
+    "specialties": ["Cardiac Surgery", "Orthopaedics", "Neurosurgery", "Gastroenterology", "Liver Transplant", "Robotics"],
+    "insurance": ["CGHS", "PMJAY", "Bajaj Allianz", "Star Health", "Aditya Birla Health"],
+    "image_search": "Medanta The Medicity Gurgaon hospital",
+    "treatments": [
+      {
+        "name": "Liver Transplant",
+        "category": "Transplant",
+        "total": 1400000,
+        "insurance_rate": 1100000,
+        "out_of_pocket": 300000,
+        "tags": ["liver", "transplant", "hepatology", "icu"],
+        "breakdown": [
+          {"label": "Surgeon Fee", "value": 400000, "color": "#064e60"},
+          {"label": "Facility Fee", "value": 700000, "color": "#0f8a99"},
+          {"label": "Anesthesia", "value": 100000, "color": "#20b2aa"},
+          {"label": "Post-Op Care", "value": 200000, "color": "#c9972f"}
+        ]
+      },
+      {
+        "name": "Spine Surgery (Lumbar Fusion)",
+        "category": "Orthopaedics",
+        "total": 370000,
+        "insurance_rate": 295000,
+        "out_of_pocket": 75000,
+        "tags": ["spine", "lumbar", "fusion", "orthopaedics", "neurosurgery"],
+        "breakdown": [
+          {"label": "Surgeon Fee", "value": 110000, "color": "#064e60"},
+          {"label": "Facility Fee", "value": 170000, "color": "#0f8a99"},
+          {"label": "Anesthesia", "value": 38000, "color": "#20b2aa"},
+          {"label": "Post-Op Care", "value": 52000, "color": "#c9972f"}
+        ]
+      },
+      {
+        "name": "MRI Scan",
+        "category": "Diagnostics",
+        "total": 10500,
+        "insurance_rate": 7800,
+        "out_of_pocket": 2700,
+        "tags": ["mri", "scan", "diagnostic", "radiology", "imaging"],
+        "breakdown": [
+          {"label": "Scan Fee", "value": 6200, "color": "#064e60"},
+          {"label": "Radiologist Fee", "value": 2100, "color": "#0f8a99"},
+          {"label": "Contrast", "value": 1400, "color": "#20b2aa"},
+          {"label": "Report Support", "value": 800, "color": "#c9972f"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Harpreet Singh",
+        "rating": 5,
+        "title": "World class care and clear billing",
+        "body": "The estimate was close to the final bill and the coordinator explained every line item before admission.",
+        "actual_cost": 1380000,
+        "recommended": true,
+        "date": "2026-05-07"
+      }
+    ]
+  },
+  {
+    "id": "aiims-new-delhi",
+    "name": "AIIMS New Delhi",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "address": "Ansari Nagar, New Delhi",
+    "pincode": "110029",
+    "lat": 28.5672,
+    "lon": 77.2100,
+    "phone": "+91-11-26588500",
+    "emergency_phone": "011-26594404",
+    "website": "https://www.aiims.edu/",
+    "type": "Teaching",
+    "clarity": 95,
+    "rating": 4.7,
+    "reviews_count": 3820,
+    "er_available": true,
+    "er_wait_min": 25,
+    "specialties": ["Trauma Care", "Cardiology", "Neurology", "Oncology", "Radiology", "Pediatrics"],
+    "insurance": ["CGHS", "PMJAY", "ESIC"],
+    "image_search": "AIIMS New Delhi hospital building",
+    "treatments": [
+      {
+        "name": "MRI Scan",
+        "category": "Diagnostics",
+        "total": 6500,
+        "insurance_rate": 4200,
+        "out_of_pocket": 2300,
+        "tags": ["mri", "scan", "diagnostic", "radiology", "imaging"],
+        "breakdown": [
+          {"label": "Scan Fee", "value": 3900, "color": "#064e60"},
+          {"label": "Radiologist Fee", "value": 1350, "color": "#0f8a99"},
+          {"label": "Contrast", "value": 850, "color": "#20b2aa"},
+          {"label": "Report Support", "value": 400, "color": "#c9972f"}
+        ]
+      },
+      {
+        "name": "Cataract Surgery",
+        "category": "Ophthalmology",
+        "total": 32000,
+        "insurance_rate": 25000,
+        "out_of_pocket": 7000,
+        "tags": ["eye", "cataract", "ophthalmology"],
+        "breakdown": [
+          {"label": "Surgeon Fee", "value": 9000, "color": "#064e60"},
+          {"label": "Facility Fee", "value": 13000, "color": "#0f8a99"},
+          {"label": "Lens", "value": 7500, "color": "#20b2aa"},
+          {"label": "Post-Op Care", "value": 2500, "color": "#c9972f"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Nidhi Verma",
+        "rating": 5,
+        "title": "Transparent and affordable",
+        "body": "Crowded, but the clinical quality and cost visibility were excellent.",
+        "actual_cost": 6400,
+        "recommended": true,
+        "date": "2026-04-18"
+      }
+    ]
+  },
+  {
+    "id": "max-saket-delhi",
+    "name": "Max Super Speciality Hospital, Saket",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "address": "Saket, New Delhi",
+    "pincode": "110017",
+    "lat": 28.5275,
+    "lon": 77.2120,
+    "phone": "+91-11-26515050",
+    "emergency_phone": "011-40554055",
+    "website": "https://www.maxhealthcare.in/",
+    "type": "Specialty Center",
+    "clarity": 90,
+    "rating": 4.6,
+    "reviews_count": 3560,
+    "er_available": true,
+    "er_wait_min": 20,
+    "specialties": ["Oncology", "Cardiology", "Orthopaedics", "MRI", "Emergency"],
+    "insurance": ["CGHS", "Star Health", "HDFC Ergo", "ICICI Lombard"],
+    "image_search": "Max Super Speciality Hospital Saket building",
+    "treatments": [
+      {
+        "name": "MRI Scan",
+        "category": "Diagnostics",
+        "total": 9200,
+        "insurance_rate": 6800,
+        "out_of_pocket": 2400,
+        "tags": ["mri", "scan", "diagnostic", "radiology", "imaging"],
+        "breakdown": [
+          {"label": "Scan Fee", "value": 5200, "color": "#064e60"},
+          {"label": "Radiologist Fee", "value": 2000, "color": "#0f8a99"},
+          {"label": "Contrast", "value": 1300, "color": "#20b2aa"},
+          {"label": "Report Support", "value": 700, "color": "#c9972f"}
+        ]
+      },
+      {
+        "name": "Knee Replacement",
+        "category": "Orthopaedics",
+        "total": 285000,
+        "insurance_rate": 230000,
+        "out_of_pocket": 55000,
+        "tags": ["knee", "joint", "orthopaedics", "replacement"],
+        "breakdown": [
+          {"label": "Surgeon Fee", "value": 80000, "color": "#064e60"},
+          {"label": "Facility Fee", "value": 120000, "color": "#0f8a99"},
+          {"label": "Implant", "value": 65000, "color": "#20b2aa"},
+          {"label": "Physio Care", "value": 20000, "color": "#c9972f"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Rohan Mehta",
+        "rating": 4,
+        "title": "Good estimate, quick MRI",
+        "body": "The MRI slot was same day and the estimate was easy to compare.",
+        "actual_cost": 9000,
+        "recommended": true,
+        "date": "2026-03-22"
+      }
+    ]
+  },
+  {
+    "id": "kokilaben-mumbai",
+    "name": "Kokilaben Dhirubhai Ambani Hospital",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "address": "Andheri West, Mumbai",
+    "pincode": "400053",
+    "lat": 19.1312,
+    "lon": 72.8247,
+    "phone": "+91-22-42696969",
+    "emergency_phone": "022-42699999",
+    "website": "https://www.kokilabenhospital.com/",
+    "type": "Specialty Center",
+    "clarity": 94,
+    "rating": 4.8,
+    "reviews_count": 4700,
+    "er_available": true,
+    "er_wait_min": 14,
+    "specialties": ["Cancer Care", "Neurosciences", "Cardiology", "Transplant", "MRI"],
+    "insurance": ["Star Health", "Bajaj Allianz", "Niva Bupa", "ICICI Lombard"],
+    "image_search": "Kokilaben Dhirubhai Ambani Hospital building",
+    "treatments": [
+      {
+        "name": "MRI Scan",
+        "category": "Diagnostics",
+        "total": 11200,
+        "insurance_rate": 8200,
+        "out_of_pocket": 3000,
+        "tags": ["mri", "scan", "diagnostic", "radiology", "imaging"],
+        "breakdown": [
+          {"label": "Scan Fee", "value": 6500, "color": "#064e60"},
+          {"label": "Radiologist Fee", "value": 2200, "color": "#0f8a99"},
+          {"label": "Contrast", "value": 1600, "color": "#20b2aa"},
+          {"label": "Report Support", "value": 900, "color": "#c9972f"}
+        ]
+      },
+      {
+        "name": "Angioplasty",
+        "category": "Cardiac",
+        "total": 245000,
+        "insurance_rate": 198000,
+        "out_of_pocket": 47000,
+        "tags": ["heart", "cardiac", "angioplasty", "stent"],
+        "breakdown": [
+          {"label": "Cardiologist Fee", "value": 65000, "color": "#064e60"},
+          {"label": "Cath Lab", "value": 85000, "color": "#0f8a99"},
+          {"label": "Stent", "value": 72000, "color": "#20b2aa"},
+          {"label": "Post-Op Care", "value": 23000, "color": "#c9972f"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Aisha Khan",
+        "rating": 5,
+        "title": "Clear cardiac estimate",
+        "body": "The estimate listed stent and facility charges separately, which helped my family plan.",
+        "actual_cost": 242000,
+        "recommended": true,
+        "date": "2026-02-12"
+      }
+    ]
+  },
+  {
+    "id": "apollo-chennai",
+    "name": "Apollo Hospitals Chennai",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "address": "Greams Road, Chennai",
+    "pincode": "600006",
+    "lat": 13.0632,
+    "lon": 80.2514,
+    "phone": "+91-44-28293333",
+    "emergency_phone": "044-28293333",
+    "website": "https://www.apollohospitals.com/",
+    "type": "Specialty Center",
+    "clarity": 92,
+    "rating": 4.8,
+    "reviews_count": 5210,
+    "er_available": true,
+    "er_wait_min": 18,
+    "specialties": ["Cardiology", "Transplant", "Orthopaedics", "Neurology", "MRI"],
+    "insurance": ["CGHS", "Star Health", "Care Health", "ManipalCigna"],
+    "image_search": "Apollo Hospitals Chennai building",
+    "treatments": [
+      {
+        "name": "Heart Bypass Surgery",
+        "category": "Cardiac",
+        "total": 335000,
+        "insurance_rate": 270000,
+        "out_of_pocket": 65000,
+        "tags": ["heart", "cardiac", "bypass", "cardiology"],
+        "breakdown": [
+          {"label": "Surgeon Fee", "value": 95000, "color": "#064e60"},
+          {"label": "Facility Fee", "value": 145000, "color": "#0f8a99"},
+          {"label": "Anesthesia", "value": 45000, "color": "#20b2aa"},
+          {"label": "Post-Op Care", "value": 50000, "color": "#c9972f"}
+        ]
+      },
+      {
+        "name": "MRI Scan",
+        "category": "Diagnostics",
+        "total": 9800,
+        "insurance_rate": 7200,
+        "out_of_pocket": 2600,
+        "tags": ["mri", "scan", "diagnostic", "radiology", "imaging"],
+        "breakdown": [
+          {"label": "Scan Fee", "value": 5400, "color": "#064e60"},
+          {"label": "Radiologist Fee", "value": 2100, "color": "#0f8a99"},
+          {"label": "Contrast", "value": 1500, "color": "#20b2aa"},
+          {"label": "Report Support", "value": 800, "color": "#c9972f"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Deepa Iyer",
+        "rating": 5,
+        "title": "Reliable cardiac team",
+        "body": "The care team explained surgery costs clearly and gave a practical recovery plan.",
+        "actual_cost": 332000,
+        "recommended": true,
+        "date": "2026-04-04"
+      }
+    ]
+  },
+  {
+    "id": "manipal-bengaluru",
+    "name": "Manipal Hospital Bengaluru",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "address": "HAL Airport Road, Bengaluru",
+    "pincode": "560017",
+    "lat": 12.9580,
+    "lon": 77.6650,
+    "phone": "+91-80-25023456",
+    "emergency_phone": "080-22221111",
+    "website": "https://www.manipalhospitals.com/",
+    "type": "Specialty Center",
+    "clarity": 91,
+    "rating": 4.7,
+    "reviews_count": 4120,
+    "er_available": true,
+    "er_wait_min": 15,
+    "specialties": ["Orthopaedics", "Cardiology", "Renal Care", "MRI", "Pediatrics"],
+    "insurance": ["Star Health", "HDFC Ergo", "Bajaj Allianz", "Care Health"],
+    "image_search": "Manipal Hospital Bengaluru building",
+    "treatments": [
+      {
+        "name": "Kidney Dialysis",
+        "category": "Renal",
+        "total": 4800,
+        "insurance_rate": 3600,
+        "out_of_pocket": 1200,
+        "tags": ["kidney", "renal", "nephrology", "dialysis"],
+        "breakdown": [
+          {"label": "Dialysis Bed", "value": 1800, "color": "#064e60"},
+          {"label": "Consumables", "value": 1500, "color": "#0f8a99"},
+          {"label": "Doctor Fee", "value": 900, "color": "#20b2aa"},
+          {"label": "Support Care", "value": 600, "color": "#c9972f"}
+        ]
+      },
+      {
+        "name": "MRI Scan",
+        "category": "Diagnostics",
+        "total": 8900,
+        "insurance_rate": 6700,
+        "out_of_pocket": 2200,
+        "tags": ["mri", "scan", "diagnostic", "radiology", "imaging"],
+        "breakdown": [
+          {"label": "Scan Fee", "value": 5000, "color": "#064e60"},
+          {"label": "Radiologist Fee", "value": 1900, "color": "#0f8a99"},
+          {"label": "Contrast", "value": 1300, "color": "#20b2aa"},
+          {"label": "Report Support", "value": 700, "color": "#c9972f"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Vikram Rao",
+        "rating": 4,
+        "title": "Good dialysis transparency",
+        "body": "The recurring dialysis package was explained well and easy to compare.",
+        "actual_cost": 4700,
+        "recommended": true,
+        "date": "2026-01-19"
+      }
+    ]
+  },
+  {
+    "id": "max-dehradun",
+    "name": "Max Super Speciality Hospital Dehradun",
+    "city": "Dehradun",
+    "state": "Uttarakhand",
+    "address": "Mussoorie Diversion Road, Malsi, Dehradun, Uttarakhand",
+    "pincode": "248001",
+    "lat": 30.3732,
+    "lon": 78.0738,
+    "phone": "+91-135-6673000",
+    "emergency_phone": "108",
+    "website": "https://www.maxhealthcare.in/",
+    "type": "Specialty Center",
+    "clarity": 88,
+    "rating": 4.4,
+    "reviews_count": 980,
+    "er_available": true,
+    "er_wait_min": 20,
+    "specialties": ["MRI", "Cardiology", "Orthopaedics", "Emergency", "Maternity"],
+    "insurance": ["CGHS", "PMJAY", "Star Health", "Bajaj Allianz"],
+    "image_search": "Max Hospital Dehradun",
+    "treatments": [
+      {
+        "name": "MRI Scan",
+        "category": "Diagnostics",
+        "total": 7600,
+        "insurance_rate": 5500,
+        "out_of_pocket": 2100,
+        "tags": ["mri", "scan", "diagnostic", "radiology", "imaging"],
+        "breakdown": [
+          {"label": "Scan Fee", "value": 4200, "color": "#064e60"},
+          {"label": "Radiologist Fee", "value": 1600, "color": "#0f8a99"},
+          {"label": "Contrast", "value": 1200, "color": "#20b2aa"},
+          {"label": "Report Support", "value": 600, "color": "#c9972f"}
+        ]
+      },
+      {
+        "name": "Angioplasty",
+        "category": "Cardiac",
+        "total": 210000,
+        "insurance_rate": 170000,
+        "out_of_pocket": 40000,
+        "tags": ["heart", "cardiac", "angioplasty", "stent"],
+        "breakdown": [
+          {"label": "Cardiologist Fee", "value": 55000, "color": "#064e60"},
+          {"label": "Cath Lab", "value": 75000, "color": "#0f8a99"},
+          {"label": "Stent", "value": 60000, "color": "#20b2aa"},
+          {"label": "Post-Op Care", "value": 20000, "color": "#c9972f"}
+        ]
+      },
+      {
+        "name": "C-Section Delivery",
+        "category": "Maternity",
+        "total": 78000,
+        "insurance_rate": 61000,
+        "out_of_pocket": 17000,
+        "tags": ["delivery", "maternity", "obstetrics", "c-section", "cesarean"],
+        "breakdown": [
+          {"label": "Doctor Fee", "value": 22000, "color": "#064e60"},
+          {"label": "Facility Fee", "value": 30000, "color": "#0f8a99"},
+          {"label": "Anesthesia", "value": 11000, "color": "#20b2aa"},
+          {"label": "Post-Op Care", "value": 15000, "color": "#c9972f"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Kavita Rawat",
+        "rating": 4,
+        "title": "Fast emergency support",
+        "body": "The ER team was quick and the diagnostic estimate was fair for Dehradun.",
+        "actual_cost": 7600,
+        "recommended": true,
+        "date": "2026-05-01"
+      }
+    ]
+  },
+  {
+    "id": "kailash-dehradun",
+    "name": "Kailash Hospital Dehradun",
+    "city": "Dehradun",
+    "state": "Uttarakhand",
+    "address": "Main Haridwar Road, Near Rispana Bridge, Nathanpur, Dehradun, Uttarakhand",
+    "pincode": "248001",
+    "lat": 30.2890,
+    "lon": 78.0408,
+    "phone": "+91-135-2662244",
+    "emergency_phone": "108",
+    "website": "https://www.kailashhealthcare.com/",
+    "type": "General",
+    "clarity": 74,
+    "rating": 4.0,
+    "reviews_count": 310,
+    "er_available": true,
+    "er_wait_min": 20,
+    "specialties": ["MRI", "General Surgery", "Maternity", "Emergency", "Orthopaedics"],
+    "insurance": ["PMJAY", "Star Health", "Care Health"],
+    "image_search": "Kailash Hospital Dehradun",
+    "treatments": [
+      {
+        "name": "MRI Scan",
+        "category": "Diagnostics",
+        "total": 6900,
+        "insurance_rate": 5100,
+        "out_of_pocket": 1800,
+        "tags": ["mri", "scan", "diagnostic", "radiology", "imaging"],
+        "breakdown": [
+          {"label": "Scan Fee", "value": 3900, "color": "#064e60"},
+          {"label": "Radiologist Fee", "value": 1400, "color": "#0f8a99"},
+          {"label": "Contrast", "value": 1050, "color": "#20b2aa"},
+          {"label": "Report Support", "value": 550, "color": "#c9972f"}
+        ]
+      },
+      {
+        "name": "C-Section Delivery",
+        "category": "Maternity",
+        "total": 66000,
+        "insurance_rate": 52000,
+        "out_of_pocket": 14000,
+        "tags": ["delivery", "maternity", "obstetrics", "c-section", "cesarean"],
+        "breakdown": [
+          {"label": "Doctor Fee", "value": 19000, "color": "#064e60"},
+          {"label": "Facility Fee", "value": 25000, "color": "#0f8a99"},
+          {"label": "Anesthesia", "value": 9000, "color": "#20b2aa"},
+          {"label": "Post-Op Care", "value": 13000, "color": "#c9972f"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Sahil Negi",
+        "rating": 4,
+        "title": "Affordable diagnostic option",
+        "body": "A practical choice for MRI near central Dehradun.",
+        "actual_cost": 6900,
+        "recommended": true,
+        "date": "2026-04-27"
+      }
+    ]
+  },
+  {
+    "id": "doon-medical-college",
+    "name": "Govt. Doon Medical College & Hospital",
+    "city": "Dehradun",
+    "state": "Uttarakhand",
+    "address": "New Road, Race Course, Dehradun, Uttarakhand",
+    "pincode": "248001",
+    "lat": 30.3190,
+    "lon": 78.0422,
+    "phone": "+91-135-2726020",
+    "emergency_phone": "108",
+    "website": "https://gdmcuk.com/",
+    "type": "Teaching",
+    "clarity": 72,
+    "rating": 3.9,
+    "reviews_count": 640,
+    "er_available": true,
+    "er_wait_min": 35,
+    "specialties": ["Emergency", "General Medicine", "Trauma", "Radiology", "Maternity"],
+    "insurance": ["PMJAY", "State Health Scheme"],
+    "image_search": "Doon Medical College Hospital Dehradun",
+    "treatments": [
+      {
+        "name": "MRI Scan",
+        "category": "Diagnostics",
+        "total": 5200,
+        "insurance_rate": 4000,
+        "out_of_pocket": 1200,
+        "tags": ["mri", "scan", "diagnostic", "radiology", "imaging"],
+        "breakdown": [
+          {"label": "Scan Fee", "value": 3000, "color": "#064e60"},
+          {"label": "Radiologist Fee", "value": 1000, "color": "#0f8a99"},
+          {"label": "Contrast", "value": 850, "color": "#20b2aa"},
+          {"label": "Report Support", "value": 350, "color": "#c9972f"}
+        ]
+      },
+      {
+        "name": "Emergency Trauma Stabilization",
+        "category": "Emergency",
+        "total": 18000,
+        "insurance_rate": 14000,
+        "out_of_pocket": 4000,
+        "tags": ["emergency", "trauma", "er"],
+        "breakdown": [
+          {"label": "ER Bed", "value": 4500, "color": "#064e60"},
+          {"label": "Doctor Fee", "value": 4000, "color": "#0f8a99"},
+          {"label": "Diagnostics", "value": 6500, "color": "#20b2aa"},
+          {"label": "Consumables", "value": 3000, "color": "#c9972f"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Ankit Bisht",
+        "rating": 4,
+        "title": "Best value in emergency",
+        "body": "Wait time can be high, but the cost is accessible and staff are direct.",
+        "actual_cost": 17000,
+        "recommended": true,
+        "date": "2026-04-10"
+      }
+    ]
+  },
+  {
+    "id": "synergy-dehradun",
+    "name": "Synergy Institute of Medical Sciences",
+    "city": "Dehradun",
+    "state": "Uttarakhand",
+    "address": "Near Ballupur Chowk, Ballupur Canal Road, Dehradun, Uttarakhand",
+    "pincode": "248001",
+    "lat": 30.3378,
+    "lon": 77.9806,
+    "phone": "+91-135-2712000",
+    "emergency_phone": "108",
+    "website": "https://synergyhealthcare.in/",
+    "type": "Specialty Center",
+    "clarity": 79,
+    "rating": 4.2,
+    "reviews_count": 520,
+    "er_available": true,
+    "er_wait_min": 25,
+    "specialties": ["Cardiology", "Neurology", "MRI", "Emergency", "Critical Care"],
+    "insurance": ["CGHS", "PMJAY", "Bajaj Allianz", "Star Health"],
+    "image_search": "Synergy Institute of Medical Sciences Dehradun",
+    "treatments": [
+      {
+        "name": "MRI Scan",
+        "category": "Diagnostics",
+        "total": 7200,
+        "insurance_rate": 5300,
+        "out_of_pocket": 1900,
+        "tags": ["mri", "scan", "diagnostic", "radiology", "imaging"],
+        "breakdown": [
+          {"label": "Scan Fee", "value": 4100, "color": "#064e60"},
+          {"label": "Radiologist Fee", "value": 1500, "color": "#0f8a99"},
+          {"label": "Contrast", "value": 1100, "color": "#20b2aa"},
+          {"label": "Report Support", "value": 500, "color": "#c9972f"}
+        ]
+      },
+      {
+        "name": "Angioplasty",
+        "category": "Cardiac",
+        "total": 198000,
+        "insurance_rate": 158000,
+        "out_of_pocket": 40000,
+        "tags": ["heart", "cardiac", "angioplasty", "stent"],
+        "breakdown": [
+          {"label": "Cardiologist Fee", "value": 52000, "color": "#064e60"},
+          {"label": "Cath Lab", "value": 70000, "color": "#0f8a99"},
+          {"label": "Stent", "value": 56000, "color": "#20b2aa"},
+          {"label": "Post-Op Care", "value": 20000, "color": "#c9972f"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Meera Joshi",
+        "rating": 4,
+        "title": "Good cardiac care locally",
+        "body": "The package made the family decision easier.",
+        "actual_cost": 196000,
+        "recommended": true,
+        "date": "2026-04-14"
+      }
+    ]
+  },
+  {
+    "id": "shri-mahant-dehradun",
+    "name": "Shri Mahant Indiresh Hospital",
+    "city": "Dehradun",
+    "state": "Uttarakhand",
+    "address": "Kargi - Patel Nagar Bypass, Govt. Industrial Estate, Patel Nagar, Dehradun",
+    "pincode": "248001",
+    "lat": 30.2872,
+    "lon": 78.0027,
+    "phone": "+91-135-6672400",
+    "emergency_phone": "108",
+    "website": "https://smihospital.com/",
+    "type": "Teaching",
+    "clarity": 76,
+    "rating": 4.1,
+    "reviews_count": 840,
+    "er_available": true,
+    "er_wait_min": 30,
+    "specialties": ["MRI", "Emergency", "General Surgery", "Pediatrics", "Maternity"],
+    "insurance": ["PMJAY", "CGHS", "ESIC"],
+    "image_search": "Shri Mahant Indiresh Hospital Dehradun",
+    "treatments": [
+      {
+        "name": "MRI Scan",
+        "category": "Diagnostics",
+        "total": 6200,
+        "insurance_rate": 4700,
+        "out_of_pocket": 1500,
+        "tags": ["mri", "scan", "diagnostic", "radiology", "imaging"],
+        "breakdown": [
+          {"label": "Scan Fee", "value": 3600, "color": "#064e60"},
+          {"label": "Radiologist Fee", "value": 1200, "color": "#0f8a99"},
+          {"label": "Contrast", "value": 950, "color": "#20b2aa"},
+          {"label": "Report Support", "value": 450, "color": "#c9972f"}
+        ]
+      },
+      {
+        "name": "Pediatric Consultation",
+        "category": "Pediatrics",
+        "total": 1200,
+        "insurance_rate": 850,
+        "out_of_pocket": 350,
+        "tags": ["child", "pediatric", "paediatric", "consultation"],
+        "breakdown": [
+          {"label": "Doctor Fee", "value": 600, "color": "#064e60"},
+          {"label": "Nursing Support", "value": 180, "color": "#0f8a99"},
+          {"label": "Vitals", "value": 120, "color": "#20b2aa"},
+          {"label": "Follow-Up", "value": 300, "color": "#c9972f"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Pooja Chauhan",
+        "rating": 4,
+        "title": "Useful for family care",
+        "body": "Pediatric consultation pricing was visible before we booked.",
+        "actual_cost": 1200,
+        "recommended": true,
+        "date": "2026-03-30"
+      }
+    ]
+  },
+  {
+    "id": "pacific-dehradun",
+    "name": "Pacific Hospital Dehradun",
+    "city": "Dehradun",
+    "state": "Uttarakhand",
+    "address": "Race Course Road, Dehradun, Uttarakhand",
+    "pincode": "248001",
+    "lat": 30.3144,
+    "lon": 78.0489,
+    "phone": "+91-135-2622020",
+    "emergency_phone": "108",
+    "website": "https://pacifichospital.in/",
+    "type": "General",
+    "clarity": 73,
+    "rating": 3.9,
+    "reviews_count": 260,
+    "er_available": true,
+    "er_wait_min": 22,
+    "specialties": ["Emergency", "Diagnostics", "General Medicine", "Maternity"],
+    "insurance": ["PMJAY", "Care Health", "Star Health"],
+    "image_search": "Pacific Hospital Dehradun",
+    "treatments": [
+      {
+        "name": "C-Section Delivery",
+        "category": "Maternity",
+        "total": 59000,
+        "insurance_rate": 46000,
+        "out_of_pocket": 13000,
+        "tags": ["delivery", "maternity", "obstetrics", "c-section", "cesarean"],
+        "breakdown": [
+          {"label": "Doctor Fee", "value": 17000, "color": "#064e60"},
+          {"label": "Facility Fee", "value": 22000, "color": "#0f8a99"},
+          {"label": "Anesthesia", "value": 8000, "color": "#20b2aa"},
+          {"label": "Post-Op Care", "value": 12000, "color": "#c9972f"}
+        ]
+      },
+      {
+        "name": "MRI Scan",
+        "category": "Diagnostics",
+        "total": 7000,
+        "insurance_rate": 5200,
+        "out_of_pocket": 1800,
+        "tags": ["mri", "scan", "diagnostic", "radiology", "imaging"],
+        "breakdown": [
+          {"label": "Scan Fee", "value": 3950, "color": "#064e60"},
+          {"label": "Radiologist Fee", "value": 1450, "color": "#0f8a99"},
+          {"label": "Contrast", "value": 1100, "color": "#20b2aa"},
+          {"label": "Report Support", "value": 500, "color": "#c9972f"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Aman Thapa",
+        "rating": 4,
+        "title": "Good local option",
+        "body": "The bill estimate was simple and the wait was manageable.",
+        "actual_cost": 7000,
+        "recommended": true,
+        "date": "2026-03-06"
+      }
+    ]
+  },
+  {
+    "id": "avicenna-dehradun",
+    "name": "Avicenna Hospital Dehradun",
+    "city": "Dehradun",
+    "state": "Uttarakhand",
+    "address": "Turner Road, Dehradun, Uttarakhand",
+    "pincode": "248002",
+    "lat": 30.2888,
+    "lon": 77.9834,
+    "phone": "+91-135-2525000",
+    "emergency_phone": "108",
+    "website": "https://example.com/avicenna-hospital",
+    "type": "General",
+    "clarity": 70,
+    "rating": 3.8,
+    "reviews_count": 190,
+    "er_available": true,
+    "er_wait_min": 18,
+    "specialties": ["Emergency", "Diagnostics", "General Medicine"],
+    "insurance": ["PMJAY", "Star Health"],
+    "image_search": "hospital Dehradun Turner Road",
+    "treatments": [
+      {
+        "name": "Emergency Trauma Stabilization",
+        "category": "Emergency",
+        "total": 21000,
+        "insurance_rate": 15500,
+        "out_of_pocket": 5500,
+        "tags": ["emergency", "trauma", "er"],
+        "breakdown": [
+          {"label": "ER Bed", "value": 5500, "color": "#064e60"},
+          {"label": "Doctor Fee", "value": 4500, "color": "#0f8a99"},
+          {"label": "Diagnostics", "value": 7000, "color": "#20b2aa"},
+          {"label": "Consumables", "value": 4000, "color": "#c9972f"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Ritu Saini",
+        "rating": 3,
+        "title": "Quick ER access",
+        "body": "Useful for urgent care near Turner Road.",
+        "actual_cost": 20000,
+        "recommended": true,
+        "date": "2026-02-28"
+      }
+    ]
+  },
+  {
+    "id": "hims-jolly-grant",
+    "name": "Himalayan Institute of Medical Sciences (HIMS)",
+    "city": "Jolly Grant",
+    "state": "Uttarakhand",
+    "address": "Swami Ram Nagar, Jolly Grant, Doiwala, Dehradun, Uttarakhand",
+    "pincode": "248140",
+    "lat": 30.1896,
+    "lon": 78.1878,
+    "phone": "+91-135-2471135",
+    "emergency_phone": "108",
+    "website": "https://srhu.edu.in/himalayan-hospital/",
+    "type": "Teaching",
+    "clarity": 82,
+    "rating": 4.2,
+    "reviews_count": 900,
+    "er_available": true,
+    "er_wait_min": 28,
+    "specialties": ["Emergency", "Teaching", "MRI", "Cancer Care", "Cardiology"],
+    "insurance": ["CGHS", "PMJAY", "ESIC", "Star Health"],
+    "image_search": "Himalayan Hospital Jolly Grant Dehradun",
+    "treatments": [
+      {
+        "name": "MRI Scan",
+        "category": "Diagnostics",
+        "total": 6400,
+        "insurance_rate": 5000,
+        "out_of_pocket": 1400,
+        "tags": ["mri", "scan", "diagnostic", "radiology", "imaging"],
+        "breakdown": [
+          {"label": "Scan Fee", "value": 3700, "color": "#064e60"},
+          {"label": "Radiologist Fee", "value": 1250, "color": "#0f8a99"},
+          {"label": "Contrast", "value": 1000, "color": "#20b2aa"},
+          {"label": "Report Support", "value": 450, "color": "#c9972f"}
+        ]
+      },
+      {
+        "name": "Cancer Chemotherapy",
+        "category": "Oncology",
+        "total": 42000,
+        "insurance_rate": 34000,
+        "out_of_pocket": 8000,
+        "tags": ["cancer", "oncology", "chemotherapy"],
+        "breakdown": [
+          {"label": "Oncologist Fee", "value": 8000, "color": "#064e60"},
+          {"label": "Daycare Bed", "value": 12000, "color": "#0f8a99"},
+          {"label": "Medicines", "value": 18000, "color": "#20b2aa"},
+          {"label": "Support Care", "value": 4000, "color": "#c9972f"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Dinesh Pant",
+        "rating": 4,
+        "title": "Strong teaching hospital",
+        "body": "Good speciality access for Dehradun and nearby areas.",
+        "actual_cost": 6350,
+        "recommended": true,
+        "date": "2026-02-09"
+      }
+    ]
+  }
+]
