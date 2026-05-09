@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0f6e7b" />
     <title>MedClear | Hospital Cost Transparency</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/styles.css?v=6" />
   </head>
   <body>
     <div id="login-screen" class="login-shell">
@@ -303,20 +303,17 @@
             <span>Phone number *</span>
             <input name="phone" placeholder="+91 98765 43210" required />
           </label>
-          <label>
-            <span>Procedure to discuss *</span>
-            <input
-              name="procedure"
-              placeholder="e.g. MRI, Spinal surgery, Knee replacement, Chemotherapy"
-              required
-            />
-            <div class="procedure-presets" aria-label="Suggested procedures">
-              <button type="button" class="chip-button" data-procedure="MRI">MRI</button>
-              <button type="button" class="chip-button" data-procedure="Spinal surgery">Spinal surgery</button>
-              <button type="button" class="chip-button" data-procedure="Knee replacement">Knee replacement</button>
-              <button type="button" class="chip-button" data-procedure="Chemotherapy">Chemotherapy</button>
+          <div class="field procedure-field" data-procedure-picker>
+            <label for="procedure-input">Procedure to discuss *</label>
+            <input id="procedure-input" name="procedure" value="General Consultation" placeholder="Select a treatment" readonly required />
+            <div id="procedure-menu" class="procedure-menu visible" role="listbox">
+              <button class="procedure-option selected" type="button" role="option" data-procedure-option="General Consultation">General Consultation</button>
+              <button class="procedure-option" type="button" role="option" data-procedure-option="MRI Scan">MRI Scan</button>
+              <button class="procedure-option" type="button" role="option" data-procedure-option="Angioplasty">Angioplasty</button>
+              <button class="procedure-option" type="button" role="option" data-procedure-option="C-Section Delivery">C-Section Delivery</button>
+              <button class="procedure-option" type="button" role="option" data-procedure-option="Other / Not Listed">Other / Not Listed</button>
             </div>
-          </label>
+          </div>
           <label>
             <span>Preferred time</span>
             <input name="preferred_time" placeholder="Tomorrow morning, after 10 AM" />
@@ -334,6 +331,6 @@
       </section>
     </div>
 
-    <script src="/app.js"></script>
+    <script src="/app.js?v=6"></script>
   </body>
 </html>

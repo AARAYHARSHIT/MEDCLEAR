@@ -532,7 +532,9 @@ class MedClearHandler(BaseHTTPRequestHandler):
 
         if parsed.path == "/api/consultations":
             payload = self.read_json_body()
-            required = ["hospital_id", "name", "email", "phone", "procedure"]
+            if not str(payload.get("procedure", "")).strip():
+                payload["procedure"] = "General Consultation"
+            required = ["hospital_id", "name", "email", "phone"]
             missing = [key for key in required if not str(payload.get(key, "")).strip()]
             if missing:
                 self.respond_json({"ok": False, "message": f"Missing fields: {', '.join(missing)}"}, status=400)
@@ -697,7 +699,7 @@ class MedClearHandler(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-Type", content_type)
         self.send_header("Content-Length", str(len(body)))
-        self.send_header("Cache-Control", "public, max-age=60")
+        self.send_header("Cache-Control", "no-cache")
         self.end_headers()
         self.wfile.write(body)
 

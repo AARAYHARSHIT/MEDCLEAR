@@ -192,7 +192,8 @@ async function handleApi(request, response, url) {
 
   if (request.method === "POST" && url.pathname === "/api/consultations") {
     const payload = await readJSONBody(request);
-    const missing = ["hospital_id", "name", "email", "phone", "procedure"].filter((key) => !String(payload[key] || "").trim());
+    if (!String(payload.procedure || "").trim()) payload.procedure = "General Consultation";
+    const missing = ["hospital_id", "name", "email", "phone"].filter((key) => !String(payload[key] || "").trim());
     if (missing.length) return sendJSON(response, { ok: false, message: `Missing fields: ${missing.join(", ")}` }, 400);
     const hospital = hospitalById.get(String(payload.hospital_id));
     if (!hospital) return sendJSON(response, { ok: false, message: "Hospital not found." }, 404);
@@ -537,7 +538,7 @@ async function serveStatic(response, rawPath) {
   response.writeHead(200, {
     "Content-Type": mimeTypes[extname(target).toLowerCase()] || "application/octet-stream",
     "Content-Length": body.length,
-    "Cache-Control": "public, max-age=60"
+    "Cache-Control": "no-cache"
   });
   response.end(body);
 }

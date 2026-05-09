@@ -20,6 +20,10 @@
   box-sizing: border-box;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -173,13 +177,15 @@ a {
 }
 
 .login-form label,
-.consult-form label {
+.consult-form label,
+.consult-form .field {
   display: grid;
   gap: 8px;
 }
 
 .login-form span,
-.consult-form span {
+.consult-form span,
+.consult-form label {
   font-size: 0.84rem;
   font-weight: 700;
 }
@@ -276,6 +282,36 @@ textarea:focus {
   margin: 0;
   color: var(--teal);
   font-weight: 800;
+}
+
+.procedure-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-height: none;
+  overflow: visible;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius);
+  background: transparent;
+  box-shadow: none;
+}
+
+.procedure-option {
+  min-height: 38px;
+  padding: 0 12px;
+  border: 1px solid rgba(15, 110, 123, 0.16);
+  border-radius: 999px;
+  color: var(--teal-dark);
+  background: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  font-weight: 750;
+}
+
+.procedure-option:hover,
+.procedure-option.selected {
+  color: var(--teal-dark);
+  background: rgba(34, 184, 176, 0.13);
 }
 
 .app-shell {

@@ -6,6 +6,7 @@ const iconPaths = {
   pin: '<path d="M12 17v5"/><path d="M5 7h14"/><path d="M7 7l2 10h6l2-10"/><path d="M9 3h6v4H9z"/>',
   "arrow-left": '<path d="M19 12H5"/><path d="m12 19-7-7 7-7"/>',
   "arrow-right": '<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>',
+  "chevron-down": '<path d="m6 9 6 6 6-6"/>',
   shield: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>',
   building: '<path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9h1"/><path d="M9 13h1"/><path d="M9 17h1"/>',
   users: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
@@ -163,6 +164,23 @@ function wireForms() {
   });
 
   document.querySelector("#consult-form").addEventListener("submit", submitConsultation);
+  wireProcedurePicker();
+}
+
+function wireProcedurePicker() {
+  const picker = document.querySelector("[data-procedure-picker]");
+  const input = document.querySelector("#procedure-input");
+  const menu = document.querySelector("#procedure-menu");
+  if (!picker || !input || !menu) return;
+
+  menu.addEventListener("click", (event) => {
+    const option = event.target.closest("[data-procedure-option]");
+    if (!option) return;
+    input.value = option.dataset.procedureOption;
+    menu.querySelectorAll("[data-procedure-option]").forEach((button) => {
+      button.classList.toggle("selected", button === option);
+    });
+  });
 }
 
 function setupRevealObserver() {
@@ -515,25 +533,33 @@ function renderERCard(hospital) {
 function openConsultModal(hospital) {
   const modal = document.querySelector("#consult-modal");
   const form = document.querySelector("#consult-form");
-  const procedureInput = form.querySelector("[name=procedure]");
-
   form.reset();
   form.hospital_id.value = hospital.id;
-  procedureInput.value = "";
-  procedureInput.placeholder = "e.g. MRI, Spinal surgery, Knee replacement, Chemotherapy";
-
-  form.querySelectorAll("[data-procedure]").forEach((button) => {
-    button.onclick = () => {
-      procedureInput.value = button.dataset.procedure;
-      procedureInput.focus();
-    };
-  });
-
+  setProcedureOptions(form, hospital);
   document.querySelector("#modal-title").textContent = "Book virtual consultation";
   document.querySelector("#modal-subtitle").textContent = hospital.name;
   document.querySelector("#consult-message").textContent = "";
   modal.hidden = false;
   document.body.style.overflow = "hidden";
+}
+
+function setProcedureOptions(form, hospital) {
+  const procedureMenu = document.querySelector("#procedure-menu");
+  const procedureInput = form.elements.procedure;
+  const treatmentNames = (hospital.treatments || []).map((treatment) => treatment.name);
+  const options = treatmentNames.length
+    ? [...treatmentNames, "Other / Not Listed"]
+    : ["General Consultation", "MRI Scan", "Angioplasty", "C-Section Delivery", "Other / Not Listed"];
+  procedureMenu.innerHTML = options
+    .map(
+      (name, index) => `
+        <button class="procedure-option ${index === 0 ? "selected" : ""}" type="button" role="option" data-procedure-option="${escapeHTML(name)}">
+          ${escapeHTML(name)}
+        </button>
+      `
+    )
+    .join("");
+  procedureInput.value = treatmentNames[0] || "General Consultation";
 }
 
 function closeConsultModal() {
@@ -547,13 +573,11 @@ async function submitConsultation(event) {
   const button = form.querySelector("button");
   const message = document.querySelector("#consult-message");
   button.disabled = true;
-  message.textContent = "";
-
-  try {
-    const payload = Object.fromEntries(new FormData(form).entries());
-    payload.hospital_id = state.selectedHospital?.id || "";
-
-    const response = await fetch("/api/consultations", {
+    message.textContent = "";
+    try {
+      const payload = Object.fromEntries(new FormData(form).entries());
+      if (!payload.procedure) payload.procedure = "General Consultation";
+      const response = await fetch("/api/consultations", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -565,6 +589,7 @@ async function submitConsultation(event) {
     if (!response.ok) throw new Error(data.message || "Could not save consultation");
     message.textContent = `${data.message} Confirmation: ${data.code}`;
     form.reset();
+    if (state.selectedHospital) setProcedureOptions(form, state.selectedHospital);
   } catch (error) {
     message.textContent = error.message;
   } finally {
