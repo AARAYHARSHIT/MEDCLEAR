@@ -1,0 +1,1 @@
+export { HOSPITALS } from '../data/hospitals';
