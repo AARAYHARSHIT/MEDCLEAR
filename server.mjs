@@ -173,14 +173,10 @@ async function handleApi(request, response, url) {
         city: "India",
         image_search: "hospital building India"
       };
-    const imageUrl = await commonsImageUrl(hospital);
-    if (imageUrl) {
-      response.writeHead(302, {
-        Location: imageUrl,
-        "Cache-Control": "public, max-age=3600"
-      });
-      return response.end();
-    }
+   response.writeHead(302, {
+    Location: "/images/hero.jpg"
+});
+return response.end();
     const body = placeholderSVG(hospital);
     response.writeHead(200, {
       "Content-Type": "image/svg+xml; charset=utf-8",
