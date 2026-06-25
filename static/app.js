@@ -200,8 +200,8 @@ async function loadHome() {
   document.querySelector("#stat-hospitals").textContent = `${Math.max(data.count, 12)}+`;
   document.querySelector("#top-hospitals").innerHTML = data.results.map(renderHospitalCard).join("");
   hydrateIcons(document.querySelector("#top-hospitals"));
-  document.querySelectorAll("[data-detail]").forEach((button) => {
-    button.addEventListener("click", () => openHospitalDetail(button.dataset.detail));
+  document.querySelectorAll("[data-detail]").forEach((element) => {
+    element.addEventListener("click", () => openHospitalDetail(element.dataset.detail));
   });
 }
 
@@ -443,7 +443,7 @@ function renderReviewCard(review) {
 
 function renderHospitalCard(hospital) {
   return `
-    <article class="hospital-card">
+    <article class="hospital-card" data-detail="${hospital.id}">
       <img src="${hospital.image}" alt="${escapeHTML(hospital.name)} exterior" loading="lazy" />
       <div class="hospital-card-body">
         <div class="card-title-row">

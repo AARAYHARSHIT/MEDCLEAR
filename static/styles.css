@@ -401,12 +401,12 @@ textarea:focus {
   z-index: -2;
   background:
     linear-gradient(90deg, rgba(251, 253, 252, 0.96) 0%, rgba(251, 253, 252, 0.86) 42%, rgba(251, 253, 252, 0.40) 78%),
-    url("/api/image?id=max-dehradun") center right/cover;
+    url("images/hero2.jpg") center center/cover;
 }
 
 .hero-bg::after {
   content: "";
-  position: absolute;
+  position: center;
   inset: auto 0 0;
   height: 32%;
   background: linear-gradient(180deg, transparent, rgba(251, 253, 252, 0.96));
@@ -593,6 +593,14 @@ textarea:focus {
   padding: 20px;
 }
 
+.hospital-card {
+    cursor: pointer;
+}
+
+.hospital-card:hover {
+    transform: translateY(-2px);
+    transition: 0.2s ease;
+}
 .card-title-row {
   display: flex;
   align-items: start;
