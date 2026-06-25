@@ -67,12 +67,13 @@ a {
   background: #081a22;
 }
 
-.login-visual {
-  position: relative;
-  overflow: hidden;
-  background:
-    linear-gradient(90deg, rgba(8, 26, 34, 0.72), rgba(8, 26, 34, 0.2)),
-    url("/api/image?id=hero") center/cover;
+.login-visual{
+    background:
+        linear-gradient(
+            rgba(0,0,0,.28),
+            rgba(0,0,0,.28)
+        ),
+        url("/images/MAX_DELHI.jpg") center/cover;
 }
 
 .login-visual::after {
@@ -81,10 +82,18 @@ a {
   inset: 8%;
   border: 1px solid rgba(255, 255, 255, 0.18);
   background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(14px);
+  backdrop-filter: none;
 }
 
 .login-card {
+  backdrop-filter: blur(18px);
+-webkit-backdrop-filter: blur(24px);
+
+background: rgba(10,75,90,.55);
+
+border:1px solid rgba(255,255,255,.18);
+
+box-shadow:-10px 0px 35px rgba(0,0,0,.18);
   display: flex;
   flex-direction: column;
   justify-content: center;
