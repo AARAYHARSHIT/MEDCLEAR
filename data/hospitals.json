@@ -144,7 +144,7 @@
   {
     "id": "max-saket-delhi",
     "name": "Max Super Speciality Hospital, Saket",
-    "image":"/images/Medanta.jpg",
+    "image":"/images/MAX_delhi.jpg",
     "city": "New Delhi",
     "state": "Delhi",
     "address": "Saket, New Delhi",
@@ -208,7 +208,7 @@
   {
     "id": "kokilaben-mumbai",
     "name": "Kokilaben Dhirubhai Ambani Hospital",
-    "image":"/images/aiims.jpg",
+    "image":"/images/Ambani.jpg",
     "city": "Mumbai",
     "state": "Maharashtra",
     "address": "Andheri West, Mumbai",
@@ -272,7 +272,7 @@
   {
     "id": "apollo-chennai",
     "name": "Apollo Hospitals Chennai",
-    "image":"/images/aiims.jpg",
+    "image":"/images/hero.jpg",
     "city": "Chennai",
     "state": "Tamil Nadu",
     "address": "Greams Road, Chennai",
@@ -336,7 +336,7 @@
   {
     "id": "manipal-bengaluru",
     "name": "Manipal Hospital Bengaluru",
-    "image":"/images/aiims.jpg",
+    "image":"/images/Manipal.jpg",
     "city": "Bengaluru",
     "state": "Karnataka",
     "address": "HAL Airport Road, Bengaluru",
@@ -400,7 +400,7 @@
   {
     "id": "max-dehradun",
     "name": "Max Super Speciality Hospital Dehradun",
-    "image":"/images/Medanta.jpg",
+    "image":"/images/MaxDoon.jpg",
     "city": "Dehradun",
     "state": "Uttarakhand",
     "address": "Mussoorie Diversion Road, Malsi, Dehradun, Uttarakhand",
@@ -478,7 +478,7 @@
   {
     "id": "kailash-dehradun",
     "name": "Kailash Hospital Dehradun",
-    "image":"/images/Medanta.jpg",
+    "image":"/images/Kailash.jpg",
     "city": "Dehradun",
     "state": "Uttarakhand",
     "address": "Main Haridwar Road, Near Rispana Bridge, Nathanpur, Dehradun, Uttarakhand",
@@ -542,7 +542,7 @@
   {
     "id": "doon-medical-college",
     "name": "Govt. Doon Medical College & Hospital",
-    "image":"/images/Medanta.jpg",
+    "image":"/images/DoonMed.jpg",
     "city": "Dehradun",
     "state": "Uttarakhand",
     "address": "New Road, Race Course, Dehradun, Uttarakhand",
@@ -606,7 +606,7 @@
   {
     "id": "synergy-dehradun",
     "name": "Synergy Institute of Medical Sciences",
-    "image":"/images/Medanta.jpg",
+    "image":"/images/Synergy.jpg",
     "city": "Dehradun",
     "state": "Uttarakhand",
     "address": "Near Ballupur Chowk, Ballupur Canal Road, Dehradun, Uttarakhand",
@@ -670,7 +670,7 @@
   {
     "id": "shri-mahant-dehradun",
     "name": "Shri Mahant Indiresh Hospital",
-    "image":"/images/Medanta.jpg",
+    "image":"/images/Shri.jpg",
     "city": "Dehradun",
     "state": "Uttarakhand",
     "address": "Kargi - Patel Nagar Bypass, Govt. Industrial Estate, Patel Nagar, Dehradun",
@@ -734,7 +734,7 @@
   {
     "id": "pacific-dehradun",
     "name": "Pacific Hospital Dehradun",
-    "image":"/images/Medanta.jpg",
+    "image":"/images/pacific.jpg",
     "city": "Dehradun",
     "state": "Uttarakhand",
     "address": "Race Course Road, Dehradun, Uttarakhand",
@@ -798,7 +798,7 @@
   {
     "id": "avicenna-dehradun",
     "name": "Avicenna Hospital Dehradun",
-    "image":"/images/Medanta.jpg",
+    "image":"/images/avicenna.jpeg",
     "city": "Dehradun",
     "state": "Uttarakhand",
     "address": "Turner Road, Dehradun, Uttarakhand",
@@ -848,7 +848,7 @@
   {
     "id": "hims-jolly-grant",
     "name": "Himalayan Institute of Medical Sciences (HIMS)",
-    "image":"/images/Medanta.jpg",
+    "image":"/images/HIMS.jpg",
     "city": "Jolly Grant",
     "state": "Uttarakhand",
     "address": "Swami Ram Nagar, Jolly Grant, Doiwala, Dehradun, Uttarakhand",
