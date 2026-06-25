@@ -103,7 +103,7 @@ export const server = createServer(async (request, response) => {
 });
 
 const port = Number(process.env.PORT || 8000);
-server.listen(port, "127.0.0.1", () => {
+server.listen(port, () => {
   console.log(`MedClear is running at http://127.0.0.1:${port}`);
   console.log(`Login: ${username} / ${password}`);
 });
