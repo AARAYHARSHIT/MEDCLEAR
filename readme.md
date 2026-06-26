@@ -2,6 +2,8 @@
 
 MedClear is a healthcare cost transparency platform that helps users compare hospitals, estimate treatment costs, discover emergency facilities, and make informed healthcare decisions.
 
+Live Demo:https://medclear-pcph.onrender.com
+
 ## ✨ Features
 
 - 🔍 Search hospitals by treatment or procedure
