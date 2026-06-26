@@ -89,7 +89,7 @@ Password: care2026
 **Harshit Pathak**
 
 - GitHub: https://github.com/AARAYHARSHIT
-- LinkedIn: *(Add your LinkedIn URL here)*
+- LinkedIn: *(https://www.linkedin.com/in/harshit-pathak-19092006hp)*
 
 ---
 
